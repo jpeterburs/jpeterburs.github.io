@@ -1,23 +1,35 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <topnav :routes="routes" />
+
+    <div id="component">
+      <router-view />
+    </div>
+
+    <made-with-love />
   </div>
 </template>
 
 <script>
+import Topnav from '@/components/Topnav.vue'
+import MadeWithLove from '@/components/MadeWithLove.vue'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Topnav,
+    MadeWithLove
+  }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: Arial, Verdana, Helvetica;
+  color: #2E3837;
+}
+
+#component {
+  margin: 1rem 20%;
 }
 </style>
