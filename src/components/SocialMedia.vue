@@ -11,6 +11,7 @@
 <script>
 import TwitterLogo from '@/assets/twitter.png'
 import GithubLogo from '@/assets/github.png'
+import GitlabLogo from '@/assets/gitlab.png'
 import LinkedinLogo from '@/assets/linkedin.png'
 
 export default {
@@ -27,6 +28,11 @@ export default {
           name: 'GitHub',
           link: 'https://github.com/jpeterburs',
           logo: GithubLogo
+        },
+        {
+          name: 'GitLab',
+          link: 'https://gitlab.com/jpeterburs',
+          logo: GitlabLogo
         },
         {
           name: 'Twitter',
