@@ -4,15 +4,11 @@
       <img :src="me" class="image" />
 
       <div class="text">
-        <h1>Hi, ich bin Jonas 👋</h1>
+        <h1>Hallo, mein Name ist Jonas</h1>
 
         <p>
-          Ich bin ein Webentwickler aus Kreis Warendorf, mit Erfahrung in <span v-html="experienced_in"></span>,
-          mit einem Verständnis von <span v-html="understanding_of"></span>.
-        </p>
-
-        <p>
-          In meiner Freihzeit <span v-html="in_my_freetime"></span>.
+          Ich bin Softwareentwickler aus Kreis Warendorf, mit Erfahrung in <span v-html="experienced_in"></span>.
+          In meiner Freizeit <span v-html="in_my_freetime"></span>.
         </p>
       </div>
     </div>
@@ -26,7 +22,7 @@ import me from '@/assets/images/me.png'
 import SocialMedia from '@/components/SocialMedia.vue'
 
 export default {
-  name: 'About',
+  name: 'about',
   components: {
     SocialMedia
   },
@@ -48,18 +44,11 @@ export default {
           'CSS'
         ]
       ),
-      understanding_of: this.list(
-        [
-          'SQL',
-          'Docker',
-          'Versionskontrollsystemen'
-        ]
-      ),
       in_my_freetime: this.list(
         [
           'lerne ich gerne neues',
-          'spiele',
-          'helfe meinem Vater in seiner Werkstatt'
+          'spiele Videospiele',
+          'helfe meinem Vater in seiner Werkstatt aus'
         ]
       )
     }
@@ -67,7 +56,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #about-me {
   display: flex;
   align-items: center;
