@@ -19,7 +19,7 @@ export default {
 }
 
 a {
-  color: #E43F5A;
+  color: #81a1c1;
   text-align: center;
   padding: 0.5rem 1rem;
   text-decoration: none;

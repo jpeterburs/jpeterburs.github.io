@@ -24,11 +24,6 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Arial, Verdana, Helvetica;
-  color: #2E3837;
-}
-
 #component {
   margin: 1rem 20%;
 }

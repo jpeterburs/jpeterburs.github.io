@@ -49,11 +49,11 @@ export default {
 }
 
 img {
-  filter: brightness(0%);
-  -webkit-filter: brightness(0%);
-  -moz-filter: brightness(0%);
-  -ms-filter: brightness(0%);
-  -o-filter: brightness(0%);
+  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);
+  -moz-filter: brightness(0) invert(1);
+  -ms-filter: brightness(0) invert(1);
+  -o-filter: brightness(0) invert(1);
 }
 
 img:hover {

@@ -3,7 +3,8 @@
     <hr />
 
     <p>
-      Made with ❤️  by <b>Jonas Peterburs</b>
+      Made with ❤️  by <b>Jonas Peterburs</b><br />
+      Theme: <a href="https://www.nordtheme.com/">Nord</a>
     </p>
   </div>
 </template>
@@ -20,7 +21,11 @@ export default {
 }
 
 hr {
-  border-color: #ddd;
+  border-color: #d8dee9;
   margin: 1em 30%;
+}
+
+a {
+  color: #81a1c1;
 }
 </style>
