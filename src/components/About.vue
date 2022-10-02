@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import me from '@/assets/me.png'
+import me from '@/assets/images/me.png'
 import SocialMedia from '@/components/SocialMedia.vue'
 
 export default {

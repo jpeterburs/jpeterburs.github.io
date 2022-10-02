@@ -9,10 +9,10 @@
 </template>
 
 <script>
-import TwitterLogo from '@/assets/twitter.png'
-import GithubLogo from '@/assets/github.png'
-import GitlabLogo from '@/assets/gitlab.png'
-import LinkedinLogo from '@/assets/linkedin.png'
+import TwitterLogo from '@/assets/images/twitter.png'
+import GithubLogo from '@/assets/images/github.png'
+import GitlabLogo from '@/assets/images/gitlab.png'
+import LinkedinLogo from '@/assets/images/linkedin.png'
 
 export default {
   name: 'social-media',
