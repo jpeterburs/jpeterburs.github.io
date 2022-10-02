@@ -1,0 +1,12 @@
+pages:
+  image: node
+  stage: deploy
+  script:
+    - npm install --progress=false
+    - npm run build
+    - mv dist public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
