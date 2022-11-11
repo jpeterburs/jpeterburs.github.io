@@ -65,6 +65,8 @@ export default {
 
 .image {
   flex-basis: 40%;
+  height: 300px;
+  width: 300px;
 }
 
 .text {
