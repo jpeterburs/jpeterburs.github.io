@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="about-me">
-      <img :src="me" class="image" />
+      <img :src="me" alt="Jonas" class="image" />
 
       <div class="text">
         <h1>Hallo, mein Name ist Jonas</h1>
@@ -65,6 +65,8 @@ export default {
 
 .image {
   flex-basis: 40%;
+  height: 300px;
+  width: 300px;
 }
 
 .text {
