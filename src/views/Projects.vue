@@ -9,7 +9,7 @@
     <br />
 
     <div v-for="project in projects" :key="project.static_id" class="preview">
-      <img class="media" :src="project.media" />
+      <img class="media" :src="project.media" :alt="project.name" />
       <div class="content">
         <h2 class="title">
           <a :href="project.link">{{ project.name }}</a>
