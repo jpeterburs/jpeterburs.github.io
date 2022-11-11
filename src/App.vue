@@ -27,4 +27,10 @@ export default {
 #component {
   margin: 1rem 20%;
 }
+
+@media screen and (max-width: 640px) {
+  #component {
+    margin: 1rem 10%;
+  }
+}
 </style>

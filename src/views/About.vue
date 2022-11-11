@@ -71,4 +71,14 @@ export default {
   font-size: 1.2rem;
   margin-left: 2rem;
 }
+
+@media screen and (max-width: 640px) {
+  #about-me {
+    display: block;
+  }
+
+  .text {
+    margin-left: auto;
+  }
+}
 </style>

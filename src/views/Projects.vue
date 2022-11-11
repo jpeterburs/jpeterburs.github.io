@@ -69,4 +69,16 @@ export default {
   color: #d8dee9;
   list-style-position: inside;
 }
+
+@media screen and (max-width: 640px) {
+  .media {
+    float: none;
+    width: 100%;
+    margin-right: auto;
+  }
+
+  .preview {
+    margin-bottom: 2rem;
+  }
+}
 </style>
