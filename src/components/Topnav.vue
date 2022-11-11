@@ -16,6 +16,7 @@ export default {
 #topnav {
   overflow: hidden;
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 a {
@@ -23,10 +24,16 @@ a {
   text-align: center;
   padding: 0.5rem 1rem;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 a:hover, .router-link-exact-active {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 640px) {
+  a {
+    font-size: 1.4rem;
+  }
 }
 </style>
