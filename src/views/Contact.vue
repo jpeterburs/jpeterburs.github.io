@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>
-      Vernetze dich mit mir auf LinkedIn und GitHub, oder über Twitter:
+      Vernetze dich mit mir auf LinkedIn und GitHub, oder über GitLab:
     </h3>
 
     <social-media />
