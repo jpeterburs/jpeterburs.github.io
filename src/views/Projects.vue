@@ -76,9 +76,10 @@ export default {
   list-style-position: inside;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1000px) {
   .preview {
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .media img {
