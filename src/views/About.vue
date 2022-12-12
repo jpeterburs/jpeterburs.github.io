@@ -10,6 +10,20 @@
           Ich bin Softwareentwickler aus Kreis Warendorf, mit Erfahrung in <span v-html="experienced_in"></span>.
           In meiner Freizeit <span v-html="in_my_freetime"></span>.
         </p>
+
+        <p>
+          In meiner derzeitigen Position arbeite ich in einem Team, das für die Entwicklung mehrerer webbasierten Anwendungen und Schnittstellen für ein großes Lebensmittelunternehmen zuständig ist.
+          Zu meinen Aufgaben gehören das Schreiben von sauberem, effizientem Code, die Durchführung von Code-Reviews und die Zusammenarbeit mit anderen Teammitgliedern bei der Fehlersuche und Problemlösung.
+        </p>
+
+        <p>
+          Vor meiner hetzigen Stelle habe ich miene Ausbilduch zum Fachinformatiker in Anwendungsentwicklung abgeschlossen, wo ich an einem Projekt zur beantragung von Hilfs- und Betribsstoffen in einer bestehenden Anwendung implementiert habem
+          Dabei konnte ich praktische Erfahrungen mit der Planung und Entwicklung webbasierter Anwendungen sammeln und meine Fähigkeiten in der Zusammenarbeit mit einem Team zur Lieferung eines hochwertigen Produkts weiterentwickeln.
+        </p>
+
+        <p>
+          Ich freue mich darauf, als Softwareentwickler weiterzulernen und zu wachsen, und bin immer auf der Suche nach neuen Möglichkeiten, mich selbst herauszufordern und meine Fähigkeiten zu erweitern.
+        </p>
       </div>
     </div>
 
