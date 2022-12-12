@@ -88,9 +88,9 @@ export default {
   margin-left: 2rem;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1400px) {
   #about-me {
-    display: block;
+    flex-direction: column;
   }
 
   .text {

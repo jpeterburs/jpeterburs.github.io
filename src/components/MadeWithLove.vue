@@ -28,4 +28,10 @@ hr {
 a {
   color: #81a1c1;
 }
+
+@media screen and (max-width: 640px) {
+  hr {
+    margin: 1rem 5%;
+  }
+}
 </style>
