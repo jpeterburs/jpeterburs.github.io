@@ -24,6 +24,10 @@ export default {
 </script>
 
 <style>
+body {
+  margin: 0;
+}
+
 #component {
   margin: 1rem 20%;
 }
