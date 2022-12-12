@@ -9,7 +9,9 @@
     <br />
 
     <div v-for="project in projects" :key="project.static_id" class="preview">
-      <img class="media" :src="project.media" :alt="project.name" />
+      <div class="media">
+        <img :src="project.media" :alt="project.name" />
+      </div>
       <div class="content">
         <h2 class="title">
           <a :href="project.link">{{ project.name }}</a>
@@ -42,10 +44,8 @@ export default {
 </script>
 
 <style scoped>
-.media {
-  float: left;
-  width: 35%;
-  margin-right: 1.5rem;
+.media img {
+  width: 100%;
   background-color: #d8dee9;
   border-radius: 0.5rem;
 }
@@ -56,13 +56,19 @@ export default {
 }
 
 .preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 1.5rem;
 }
 
-.preview:after {
-  content: "";
-  display: table;
-  clear: both;
+.media {
+  flex-basis: 30%;
+}
+
+.content {
+  margin-left: 1.5rem;
+  flex-basis: 70%;
 }
 
 .contribution {
@@ -71,14 +77,16 @@ export default {
 }
 
 @media screen and (max-width: 640px) {
-  .media {
-    float: none;
-    width: 100%;
-    margin-right: auto;
+  .preview {
+    flex-direction: column;
   }
 
-  .preview {
-    margin-bottom: 2rem;
+  .media img {
+    width: 100%;
+  }
+
+  .content {
+    margin: 0;
   }
 }
 </style>
