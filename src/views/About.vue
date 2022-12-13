@@ -17,7 +17,7 @@
         </p>
 
         <p>
-          Vor meiner hetzigen Stelle habe ich miene Ausbilduch zum Fachinformatiker in Anwendungsentwicklung abgeschlossen, wo ich an einem Projekt zur beantragung von Hilfs- und Betribsstoffen in einer bestehenden Anwendung implementiert habem
+          Vor meiner jetzigen Stelle habe ich meine Ausbildung zum Fachinformatiker in Anwendungsentwicklung abgeschlossen, in welchem ich einen Anforderungsprozess in eine bestehende Anwendung implementiert habe.
           Dabei konnte ich praktische Erfahrungen mit der Planung und Entwicklung webbasierter Anwendungen sammeln und meine Fähigkeiten in der Zusammenarbeit mit einem Team zur Lieferung eines hochwertigen Produkts weiterentwickeln.
         </p>
 
