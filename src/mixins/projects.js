@@ -1,4 +1,7 @@
+import Errbit from '@/assets/images/errbit.png'
 import SuperProductivity from '@/assets/images/super-productivity.png'
+import CarParkAPI from '@/assets/images/car-park-api.png'
+import CarParkUI from '@/assets/images/car-park-ui.png'
 import GameOfLife from '@/assets/images/game-of-life.png'
 import Timelib from '@/assets/images/timelib.png'
 
@@ -6,6 +9,16 @@ export const Project = {
   methods: {
     allProjects () {
       return [
+        {
+          static_id: 'errbit',
+          name: 'Errbit',
+          desc: 'Die Open Source-Fehlerüberwachung, welche mit der Airbrake API kompatibel ist.',
+          media: Errbit,
+          link: 'https://github.com/errbit/errbit',
+          contributions: [
+            'API-Endpunkt für Kommentare'
+          ]
+        },
         {
           static_id: 'super-productivity',
           name: 'Super Productivity',
@@ -17,13 +30,36 @@ export const Project = {
           ]
         },
         {
+          static_id: 'car-park-api',
+          name: 'Parkhausverwaltung (Backend)',
+          desc: 'Serverlösung für das Zufahrtsmanagement eines mehrstöckigen Parkhauses.',
+          media: CarParkAPI,
+          link: 'https://github.com/jpeterburs/car-park-api',
+          contributions: [
+            'Planung',
+            'Implementation',
+            'Einführung Docker'
+          ]
+        },
+        {
+          static_id: 'car-park-ui',
+          name: 'Parkhausverwaltung (Frontend)',
+          desc: 'Clientlösung für das Zufahrtsmanagement eines mehrstöckigen Parkhauses.',
+          media: CarParkUI,
+          link: 'https://github.com/jpeterburs/car-park',
+          contributions: [
+            'UX/UI',
+            'Einführung Docker'
+          ]
+        },
+        {
           static_id: 'game-of-life',
           name: 'The Game of Life',
           desc: 'Basierend auf dem Spiel des Lebens von Conway.',
           media: GameOfLife,
           link: 'https://github.com/jpeterburs/game_of_life',
           contributions: [
-            'UI/UX',
+            'UX/UI',
             'Planung',
             'Dokumentation'
           ]
@@ -36,7 +72,7 @@ export const Project = {
           link: 'https://github.com/jpeterburs/timelib',
           contributions: [
             'Planung',
-            'Umsetzung',
+            'Implementation',
             'Dokumentation'
           ]
         }
