@@ -1,7 +1,7 @@
 import Errbit from '@/assets/images/errbit.png'
 import SuperProductivity from '@/assets/images/super-productivity.png'
-import CarParkAPI from '@/assets/images/car-park-api.png'
-import CarParkUI from '@/assets/images/car-park-ui.png'
+import CarParkAPI from '@/assets/images/car-park-api.jpg'
+import CarParkUI from '@/assets/images/car-park-ui.jpg'
 import GameOfLife from '@/assets/images/game-of-life.png'
 import Timelib from '@/assets/images/timelib.png'
 
