@@ -9,9 +9,10 @@
 </template>
 
 <script>
+import LinkedinLogo from '@/assets/images/linkedin.png'
+import XingLogo from '@/assets/images/xing.png'
 import GithubLogo from '@/assets/images/github.png'
 import GitlabLogo from '@/assets/images/gitlab.png'
-import LinkedinLogo from '@/assets/images/linkedin.png'
 
 export default {
   name: 'social-media',
@@ -22,6 +23,11 @@ export default {
           name: 'LinkedIn',
           link: 'https://www.linkedin.com/in/jpeterburs/',
           logo: LinkedinLogo
+        },
+        {
+          name: 'XING',
+          link: 'https://www.xing.com/profile/Jonas_Peterburs',
+          logo: XingLogo
         },
         {
           name: 'GitHub',
