@@ -1,12 +1,10 @@
 <template>
-  <div>
-    <div id="about-me">
-      <img :src="me" alt="Profilbild" class="avatar" width="300" height="300" />
+  <div id="about-me">
+    <img :src="me" alt="Profilbild" class="avatar" width="300" height="300" />
 
-      <h1 id="name">Jonas</h1>
-      <h2 id="job-description">Junior Softwareentwickler</h2>
-      <h3 id="home-town">aus Kreis Warendorf</h3>
-    </div>
+    <h1 id="name">Jonas</h1>
+    <h2 id="job-description">Junior Softwareentwickler</h2>
+    <h3 id="home-town">aus Kreis Warendorf</h3>
 
     <social-media />
   </div>
@@ -32,8 +30,6 @@ export default {
 <style scoped>
 #about-me {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 

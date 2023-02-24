@@ -1,30 +1,19 @@
 <template>
-  <div>
+  <div id="projects">
     <h1>Projekte</h1>
 
-    <p>
-      Einige meiner Arbeiten aus der Freizeit.
-    </p>
-
-    <br />
-
     <div v-for="project in projects" :key="project.static_id" class="preview">
-      <div class="media">
-        <img :src="project.media" :alt="project.name" />
-      </div>
-      <div class="content">
-        <h2 class="title">
-          <a :href="project.link">{{ project.name }}</a>
-        </h2>
+      <h2 class="title">
+        <a :href="project.link">{{ project.name }}</a>
+      </h2>
 
-        <p class="desc">
-          {{ project.desc }}
-        </p>
+      <p class="desc">
+        {{ project.desc }}
+      </p>
 
-        <ul>
-          <li v-for="contribution in project.contributions" :key="contribution" class="contribution">{{ contribution }}</li>
-        </ul>
-      </div>
+      <ul class="contributions">
+        <li v-for="contribution in project.contributions" :key="contribution">{{ contribution }}</li>
+      </ul>
     </div>
   </div>
 </template>
@@ -44,10 +33,8 @@ export default {
 </script>
 
 <style scoped>
-.media img {
-  width: 100%;
-  background-color: #d8dee9;
-  border-radius: 0.5rem;
+#projects, .preview {
+  align-items: initial !important;
 }
 
 .title a {
@@ -56,38 +43,15 @@ export default {
 }
 
 .preview {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 1.5rem;
 }
 
-.media {
-  flex-basis: 30%;
+.contributions {
+  padding-left: 0;
 }
 
-.content {
-  margin-left: 1.5rem;
-  flex-basis: 70%;
-}
-
-.contribution {
+.contributions li {
   color: #d8dee9;
   list-style-position: inside;
-}
-
-@media screen and (max-width: 1000px) {
-  .preview {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .media img {
-    width: 100%;
-  }
-
-  .content {
-    margin: 0;
-  }
 }
 </style>

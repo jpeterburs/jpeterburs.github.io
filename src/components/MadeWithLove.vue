@@ -1,7 +1,5 @@
 <template>
   <div id="made-with-love">
-    <hr />
-
     <p>
       Made with ❤️  by <b>Jonas Peterburs</b><br />
       Theme: <a href="https://www.nordtheme.com/">Nord</a>
