@@ -1,31 +1,10 @@
 <template>
-  <div>
-    <div id="about-me">
-      <img :src="me" alt="Jonas" class="image" width="300" height="300" />
+  <div id="about-me">
+    <img :src="me" alt="Profilbild" class="avatar" width="300" height="300" />
 
-      <div class="text">
-        <h1>Hallo, mein Name ist Jonas</h1>
-
-        <p>
-          Ich bin Softwareentwickler aus Kreis Warendorf, mit Erfahrung in <span v-html="experienced_in"></span>.
-          In meiner Freizeit <span v-html="in_my_freetime"></span>.
-        </p>
-
-        <p>
-          In meiner derzeitigen Position arbeite ich in einem Team, das für die Entwicklung mehrerer webbasierten Anwendungen und Schnittstellen für ein großes Lebensmittelunternehmen zuständig ist.
-          Zu meinen Aufgaben gehören das Schreiben von sauberem, effizientem Code, die Durchführung von Code-Reviews und die Zusammenarbeit mit anderen Teammitgliedern bei der Fehlersuche und Problemlösung.
-        </p>
-
-        <p>
-          Vor meiner jetzigen Stelle habe ich meine Ausbildung zum Fachinformatiker in Anwendungsentwicklung abgeschlossen, in welchem ich einen Anforderungsprozess in eine bestehende Anwendung implementiert habe.
-          Dabei konnte ich praktische Erfahrungen mit der Planung und Entwicklung webbasierter Anwendungen sammeln und meine Fähigkeiten in der Zusammenarbeit mit einem Team zur Lieferung eines hochwertigen Produkts weiterentwickeln.
-        </p>
-
-        <p>
-          Ich freue mich darauf, als Softwareentwickler weiterzulernen und zu wachsen, und bin immer auf der Suche nach neuen Möglichkeiten, mich selbst herauszufordern und meine Fähigkeiten zu erweitern.
-        </p>
-      </div>
-    </div>
+    <h1 id="name">Jonas</h1>
+    <h2 id="job-description">Junior Softwareentwickler</h2>
+    <h3 id="home-town">aus Kreis Warendorf</h3>
 
     <social-media />
   </div>
@@ -40,31 +19,9 @@ export default {
   components: {
     SocialMedia
   },
-  methods: {
-    list: function (list) {
-      const last = list.pop()
-
-      return `<b>${list.join('</b>, <b>')}</b> und <b>${last}</b>`
-    }
-  },
   data () {
     return {
-      me: me,
-      experienced_in: this.list(
-        [
-          'Ruby on Rails',
-          'JavaScript',
-          'HTML',
-          'CSS'
-        ]
-      ),
-      in_my_freetime: this.list(
-        [
-          'lerne ich gerne neues',
-          'spiele Videospiele',
-          'helfe meinem Vater in seiner Werkstatt aus'
-        ]
-      )
+      me: me
     }
   }
 }
@@ -73,26 +30,26 @@ export default {
 <style scoped>
 #about-me {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 
-.image {
+#avatar {
   flex-basis: 40%;
 }
 
-.text {
-  font-size: 1.2rem;
-  margin-left: 2rem;
+h1, h2, h3 {
+  margin-bottom: .5rem;
 }
 
-@media screen and (max-width: 1400px) {
-  #about-me {
-    flex-direction: column;
-  }
+#name {
+  margin-top: 2rem;
+}
 
-  .text {
-    margin-left: auto;
-  }
+#job-description {
+  margin-top: 1rem;
+}
+
+#home-town {
+  margin-top: 0;
 }
 </style>

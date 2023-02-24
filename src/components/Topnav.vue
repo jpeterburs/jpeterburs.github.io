@@ -3,7 +3,6 @@
     <div class="navbar">
       <router-link :to="{ name: 'about' }">Über mich</router-link>
       <router-link :to="{ name: 'projects' }">Projekte</router-link>
-      <router-link :to="{ name: 'contact' }">Kontakt</router-link>
 
       <a href="javascript:void(0);" class="icon" v-on:click="toggleTopbar()">
         <span></span>

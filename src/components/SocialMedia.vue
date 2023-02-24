@@ -47,8 +47,9 @@ export default {
 
 <style scoped>
 #social-media {
-  margin-top: 1.5rem;
+  margin-top: 3rem;
   text-align: center;
+  flex-direction: row;
 }
 
 .platform {
