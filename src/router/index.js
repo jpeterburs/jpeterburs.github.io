@@ -7,6 +7,7 @@ import Projects from '@/views/Projects'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       name: 'about',
