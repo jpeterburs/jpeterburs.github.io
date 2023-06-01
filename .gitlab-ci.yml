@@ -5,6 +5,7 @@ pages:
     - npm install --progress=false
     - npm run build
     - mv dist public
+    - cp public/index.html public/404.html
   artifacts:
     paths:
       - public
