@@ -10,6 +10,17 @@ export const Project = {
     allProjects () {
       return [
         {
+          static_id: 'haiku-bot',
+          name: 'Haiku-bot',
+          desc: 'Ein einfacher Diskord-Bot, um versehentliche Haiku zu erkennen.',
+          media: '', // TODO: Add Media
+          link: 'https://github.com/jpeterburs/haiku-bot',
+          contributions: [
+            'Implementation',
+            'Wartung'
+          ]
+        },
+        {
           static_id: 'errbit',
           name: 'Errbit',
           desc: 'Die Open Source-Fehlerüberwachung, welche mit der Airbrake API kompatibel ist.',
