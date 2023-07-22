@@ -10,6 +10,18 @@ export const Project = {
     allProjects () {
       return [
         {
+          static_id: 'mittwoch',
+          name: 'Ist es Mittwoch?',
+          desc: 'Finde heraus, ob es "Mittwoch" ist!',
+          media: '', // TODO: Add Media
+          link: 'https://github.com/jpeterburs/istesmittwoch',
+          contributions: [
+            'Design',
+            'Implementierung',
+            'Wartung'
+          ]
+        },
+        {
           static_id: 'haiku-bot',
           name: 'Haiku-bot',
           desc: 'Ein einfacher Diskord-Bot, um versehentliche Haiku zu erkennen.',
