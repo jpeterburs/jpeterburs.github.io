@@ -31,8 +31,7 @@ jobs:
         run: |
           npm install --progress=false
           npm run build
-          mv dist public
-          cp public/index.html public/404.html
+          cp dist/index.html dist/404.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -40,7 +39,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: public
+          path: dist
 
       - name: Deploy to GitHub Pages
         id: deployment

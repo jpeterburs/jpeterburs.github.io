@@ -6,7 +6,7 @@
     <h2 id="job-description">Junior Softwareentwickler</h2>
     <h3 id="home-town">aus Kreis Warendorf</h3>
 
-    <social-media />
+    <SocialMedia />
   </div>
 </template>
 

@@ -1,12 +1,16 @@
+<script setup>
+import { RouterView } from 'vue-router'
+</script>
+
 <template>
   <div id="app">
-    <topnav :routes="routes" />
+    <Topnav :routes="routes" />
 
     <div id="component">
-      <router-view />
+      <RouterView />
     </div>
 
-    <made-with-love />
+    <MadeWithLove />
   </div>
 </template>
 

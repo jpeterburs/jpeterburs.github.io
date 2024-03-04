@@ -1,23 +1,22 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 
-import About from '@/views/About'
-import Projects from '@/views/Projects'
+import About from '../views/About.vue'
+import Projects from '../views/Projects.vue'
 
-Vue.use(Router)
-
-export default new Router({
-  mode: 'history',
+const router = createRouter({
+  history: createWebHistory(),
   routes: [
     {
-      name: 'about',
       path: '/',
+      name: 'about',
       component: About
     },
     {
-      name: 'projects',
       path: '/projects',
+      name: 'projects',
       component: Projects
     }
   ]
 })
+
+export default router
