@@ -1,8 +1,8 @@
 <template>
-  <div class="projects">
+  <div id="projects">
     <div v-for="project in projects" :key="project.name" class="project">
       <a :href="project.link">
-        <img :alt="project.name" :src="project.thumbnail" height="120" width="320" class="project-img" />
+        <img :alt="project.name" :src="project.thumbnail" height="256" width="512" class="project-img" />
       </a>
     </div>
   </div>
@@ -16,12 +16,12 @@ export default {
         {
           name: 'drei-fragezeichen',
           link: 'https://jpeterburs.de/drei-fragezeichen',
-          thumbnail: 'https://placehold.co/320x120?text=drei-fragezeichen'
+          thumbnail: 'https://placehold.co/512x256?text=drei-fragezeichen'
         },
         {
           name: 'Ist es Mittwoch?',
           link: 'https://istesmittwoch.de',
-          thumbnail: 'https://placehold.co/320x120?text=istesmittwoch'
+          thumbnail: 'https://placehold.co/512x256?text=istesmittwoch'
         }
       ]
     }
@@ -30,21 +30,21 @@ export default {
 </script>
 
 <style scoped>
-.projects {
+#projects {
   display: flex;
   justify-content: center;
 }
 
-.project {
+#projects div {
   margin: 0.5rem 1rem;
 }
 
-.project-img {
+img {
   border-radius: 1.5rem;
   transition: transform 0.15s ease-in-out;
 }
 
-.project-img:hover {
+img:hover {
   transform: scale(1.05);
 }
 </style>
