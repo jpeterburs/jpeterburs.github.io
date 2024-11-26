@@ -27,8 +27,7 @@ import SocialMedia from '@/components/SocialMedia.vue'
 export default {
   components: {
     Projects,
-    SocialMedia,
-    Legal
+    SocialMedia
   }
 }
 </script>
