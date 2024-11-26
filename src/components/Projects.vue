@@ -33,6 +33,7 @@ export default {
 #projects {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #projects div {
