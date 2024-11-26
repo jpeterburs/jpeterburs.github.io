@@ -9,10 +9,9 @@
 </template>
 
 <script>
+import BlueskyLogo from '@/assets/images/bluesky.png'
 import LinkedinLogo from '@/assets/images/linkedin.png'
-import XingLogo from '@/assets/images/xing.png'
 import GithubLogo from '@/assets/images/github.png'
-import GitlabLogo from '@/assets/images/gitlab.png'
 
 export default {
   name: 'social-media',
@@ -20,24 +19,19 @@ export default {
     return {
       platforms: [
         {
+          name: 'Bluesky',
+          link: 'https://bsky.app/profile/jonas.trashpanda.media',
+          logo: BlueskyLogo
+        },
+        {
           name: 'LinkedIn',
           link: 'https://www.linkedin.com/in/jpeterburs/',
           logo: LinkedinLogo
         },
         {
-          name: 'XING',
-          link: 'https://www.xing.com/profile/Jonas_Peterburs',
-          logo: XingLogo
-        },
-        {
           name: 'GitHub',
           link: 'https://github.com/jpeterburs',
           logo: GithubLogo
-        },
-        {
-          name: 'GitLab',
-          link: 'https://gitlab.com/jpeterburs',
-          logo: GitlabLogo
         }
       ]
     }
