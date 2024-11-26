@@ -1,6 +1,6 @@
 <template>
   <header>
-    <img alt="JPETERBURS.DE" src="https://place-hold.it/480x64?text=JPETERBURS.DE" height="64" width="480" />
+    <Logo />
 
     <span>gestaltung digitaler Erlebnisse</span>
   </header>
@@ -14,8 +14,11 @@
 
     <SocialMedia />
   </footer>
-
 </template>
+
+<script setup>
+import Logo from './logo.svg'
+</script>
 
 <script>
 import Projects from '@/components/Projects.vue'
