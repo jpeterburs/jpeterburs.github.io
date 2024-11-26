@@ -1,6 +1,7 @@
-/* https://www.realtimecolors.com/?colors=e5e5f0-06070c-9d9ed0-333575-575abe */
+@import "@catppuccin/palette/css/catppuccin.css";
+
 body {
   font-family: Arial, Verdana, Helvetica;
-  background-color: #06070c;
-  color: #e5e5f0;
+  background-color: var(--ctp-latte-base);
+  color: var(--ctp-latte-text);
 }
