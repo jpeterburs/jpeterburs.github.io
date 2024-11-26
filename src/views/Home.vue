@@ -10,7 +10,7 @@
   </main>
 
   <footer>
-    <span>Hallo! Ich bin Jonas, Junior Softwareentwickler aus Kreis Warendorf.</span>
+    <span>Hallo! Ich bin Jonas, Softwareentwickler aus Kreis Warendorf.</span>
 
     <SocialMedia />
   </footer>
@@ -38,10 +38,8 @@ header {
 }
 
 header, footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  display: grid;
+  place-items: center;
 }
 
 header span {
