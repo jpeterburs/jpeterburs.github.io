@@ -16,12 +16,12 @@ export default {
         {
           name: 'drei-fragezeichen',
           link: 'https://jpeterburs.de/drei-fragezeichen',
-          thumbnail: 'https://place-hold.it/320x120?text=drei-fragezeichen'
+          thumbnail: 'https://placehold.co/320x120?text=drei-fragezeichen'
         },
         {
           name: 'Ist es Mittwoch?',
           link: 'https://istesmittwoch.de',
-          thumbnail: 'https://place-hold.it/320x120?text=istesmittwoch'
+          thumbnail: 'https://placehold.co/320x120?text=istesmittwoch'
         }
       ]
     }
