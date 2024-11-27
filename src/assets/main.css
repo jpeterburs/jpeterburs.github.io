@@ -7,5 +7,5 @@
 body {
   font-family: Arial, Verdana, Helvetica;
   background-color: light-dark(var(--ctp-latte-base), var(--ctp-mocha-base));
-  color: light-dark(var(--ctp-latte-text), var(--ctp-mocha-base));
+  color: light-dark(var(--ctp-latte-text), var(--ctp-mocha-text));
 }
