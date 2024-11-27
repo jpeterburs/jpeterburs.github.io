@@ -43,7 +43,7 @@ header, footer {
 }
 
 header svg {
-  fill: var(--ctp-latte-text);
+  fill: light-dark(var(--ctp-latte-text), var(--ctp-mocha-text));
 }
 
 header span {
