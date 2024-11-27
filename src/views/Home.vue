@@ -42,6 +42,10 @@ header, footer {
   place-items: center;
 }
 
+header svg {
+  fill: var(--ctp-latte-text);
+}
+
 header span {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
