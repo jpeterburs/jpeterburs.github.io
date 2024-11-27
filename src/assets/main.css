@@ -1,5 +1,11 @@
+@import "@catppuccin/palette/css/catppuccin.css";
+
+:root {
+  color-scheme: light dark;
+}
+
 body {
   font-family: Arial, Verdana, Helvetica;
-  background-color: #2e3440;
-  color: #eceff4;
+  background-color: light-dark(var(--ctp-latte-base), var(--ctp-mocha-base));
+  color: light-dark(var(--ctp-latte-text), var(--ctp-mocha-text));
 }
