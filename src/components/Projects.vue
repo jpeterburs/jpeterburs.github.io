@@ -22,6 +22,11 @@ export default {
           name: 'Ist es Mittwoch?',
           link: 'https://istesmittwoch.de',
           thumbnail: 'https://placehold.co/512x256?text=istesmittwoch'
+        },
+        {
+          name: 'roll',
+          link: 'https://jpeterburs.de/roll',
+          thumbnail: 'https://placehold.co/512x256?text=roll'
         }
       ]
     }
