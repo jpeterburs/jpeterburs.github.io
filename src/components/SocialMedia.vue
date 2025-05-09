@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import BlueskyLogo from '@/assets/images/bluesky.png'
 import LinkedinLogo from '@/assets/images/linkedin.png'
 import GithubLogo from '@/assets/images/github.png'
 
@@ -17,6 +18,11 @@ export default {
   data () {
     return {
       platforms: [
+        {
+          name: 'Bluesky',
+          link: 'https://bsky.app/profile/jonas.trashpanda.media',
+          logo: BlueskyLogo
+        },
         {
           name: 'LinkedIn',
           link: 'https://www.linkedin.com/in/jpeterburs/',
@@ -35,7 +41,6 @@ export default {
 
 <style scoped>
 #social-media {
-  margin-top: 3rem;
   text-align: center;
   flex-direction: row;
 }
