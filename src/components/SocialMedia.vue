@@ -1,7 +1,7 @@
 <template>
   <div id="social-media" >
     <span v-for="platform in platforms" :key="platform.name">
-      <a class="platform" :href="platform.link" target="_blank">
+      <a class="platform" :href="platform.link" target="_blank" rel="me">
         <img :src="platform.logo" :alt="platform.name" height="30" />
       </a>
     </span>
@@ -11,6 +11,7 @@
 <script>
 import LinkedinLogo from '@/assets/images/linkedin.png'
 import GithubLogo from '@/assets/images/github.png'
+import MastodonLogo from '@/assets/images/mastodon.png'
 
 export default {
   name: 'social-media',
@@ -21,6 +22,11 @@ export default {
           name: 'LinkedIn',
           link: 'https://www.linkedin.com/in/jpeterburs/',
           logo: LinkedinLogo
+        },
+        {
+          name: 'Mastodon',
+          link: 'https://mastodon.social/@jpeterburs',
+          logo: MastodonLogo
         },
         {
           name: 'GitHub',
