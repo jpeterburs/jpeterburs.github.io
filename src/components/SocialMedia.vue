@@ -1,7 +1,7 @@
 <template>
   <div id="social-media" >
     <span v-for="platform in platforms" :key="platform.name">
-      <a class="platform" :href="platform.link" target="_blank" rel="me">
+      <a class="platform" :href="platform.link" target="_blank" rel="nofollow">
         <img :src="platform.logo" :alt="platform.name" height="30" />
       </a>
     </span>
